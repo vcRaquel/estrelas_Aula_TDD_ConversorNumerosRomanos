@@ -28,4 +28,37 @@ public class CalculadoraTest {
 
         Assert.assertEquals(-6, resultado);
     }
+
+    @Test
+    public void testarSubtracaoDeDoisNumerosPositivos(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.subtrair(2,2);
+
+        Assert.assertEquals(0, resultado);
+    }
+
+    @Test
+    public void testarSubtracaoDeDoisNumerosNegativos(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.subtrair(-5,-2);
+
+        Assert.assertEquals(-7, resultado);
+    }
+
+    @Test
+    public void testarMultiplicacaoDoisNumerosPositivos(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.multiplicar(2,3);
+
+        Assert.assertEquals(6,resultado);
+    }
+
+    @Test
+    public void testarDivisaoDoisNumerosPositivos(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.dividir(12,3);
+
+        Assert.assertEquals(4,resultado);
+    }
+
 }

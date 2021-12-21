@@ -13,4 +13,26 @@ public class Calculadora {
 
         return resultado;
     }
+
+    public int subtrair(int x, int y){
+        int resultado = 0;
+        if (y>=0){
+            resultado = x - y;
+        }else if (y<0){
+            resultado = x + y;
+        }
+
+        return resultado;
+    }
+
+    public int multiplicar(int x, int y){
+        int resultado = x * y;
+        return resultado;
+    }
+
+    public int dividir(int x, int y){
+        int resultado = x / y;
+        return resultado;
+    }
+
 }
